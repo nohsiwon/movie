@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+/* header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  z-index: 1;
+}
+
+.innerHeader {
+  width: 1280px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.searchBox {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.searchBox .result {
+  width: 200px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.searchBox .searchIcon {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* main */
+
+main {
+  background-color: gray;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 100px;
+  padding: 28px 0;
+}
+
+.movies {
+  width: 1280px;
+
+  margin: 0 auto;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.movies .movie {
+  width: 299px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 1px 1px 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.movies .movie .movieTitle {
+  width: 100%;
+  height: 50px;
+  /* background-color: red; */
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.movies .movie .movieInner {
+  position: relative;
+  overflow: hidden;
+}
+
+.movies .movie .movieInner .movieImg {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+.movies .movie .movieInner .movieImg img {
+  width: 102%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.movies .movie .movieInner .movieContent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  /* opacity: 0; */
+  transition: all 0.5s;
+}
+
+.movies .movie:hover .movieInner .movieContent {
+  /* opacity: 1; */
+  top: 0;
+}
+
+.movies .movie .movieInner .movieContent .rating {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.movies .movie .movieInner .movieContent .summary {
+  font-size: 20px;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+.footer .footerInner {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
