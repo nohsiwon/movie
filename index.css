@@ -14,7 +14,7 @@ img {
   left: 0;
   width: 100%;
   height: 100px;
-  background-color: black;
+  background-color: white;
   z-index: 1;
 }
 
@@ -29,8 +29,9 @@ img {
 
 .title {
   font-size: 30px;
-  color: white;
+  color: black;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .searchBox {
@@ -66,7 +67,7 @@ img {
 /* main */
 
 main {
-  background-color: gray;
+  background-color: black;
   width: 100%;
   min-height: 100vh;
   margin-top: 100px;
@@ -84,38 +85,37 @@ main {
 
 .movies .movie {
   width: 299px;
-  height: 400px;
-  background-color: white;
-  box-shadow: 1px 1px 3px;
+  max-height: 500px;
+  box-shadow: 1px 1px 8px 2px white;
   box-sizing: border-box;
   cursor: pointer;
+  /* overflow: hidden; */
 }
 
 .movies .movie .movieTitle {
+  background-color: black;
+  color: white;
   width: 100%;
-  height: 50px;
-  /* background-color: red; */
   padding: 10px;
   box-sizing: border-box;
-  line-height: 30px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 .movies .movie .movieInner {
   position: relative;
   overflow: hidden;
+  height: 429px;
 }
 
 .movies .movie .movieInner .movieImg {
   width: 100%;
-  height: 350px;
-  position: relative;
+  height: auto;
 }
 
 .movies .movie .movieInner .movieImg img {
-  width: 102%;
-  height: auto;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -128,27 +128,25 @@ main {
   left: 0;
 
   width: 100%;
-  height: 350px;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
   padding: 10px;
   box-sizing: border-box;
-  /* opacity: 0; */
   transition: all 0.5s;
 }
 
 .movies .movie:hover .movieInner .movieContent {
-  /* opacity: 1; */
   top: 0;
 }
 
 .movies .movie .movieInner .movieContent .rating {
   margin-bottom: 6px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .movies .movie .movieInner .movieContent .summary {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* footer */
@@ -156,8 +154,8 @@ main {
 .footer {
   width: 100%;
   height: 100px;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .footer .footerInner {
