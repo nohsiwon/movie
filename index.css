@@ -35,7 +35,6 @@ img {
 }
 
 .searchBox {
-  width: 280px;
   height: 40px;
   display: flex;
   gap: 10px;
@@ -86,7 +85,7 @@ main {
 .movies .movie {
   width: 299px;
   max-height: 500px;
-  box-shadow: 1px 1px 8px 2px white;
+  box-shadow: 1px 1px 8px 3px gray;
   box-sizing: border-box;
   cursor: pointer;
   /* overflow: hidden; */
